@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/conda-incubator/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/conda/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -23,8 +23,8 @@ requirements:
     - hatch-vcs >=0.2.0
   run:
     - python >={{ python_min }}
-    - conda >=25.9.0
-    - pydantic >=2,<3
+    - conda >=26.3.0
+    - pydantic >=2.12.5,<3
     - ruamel.yaml
 
 test:
@@ -38,7 +38,7 @@ test:
     - conda_lockfiles.rattler_lock.v6
 
 about:
-  home: https://github.com/conda-incubator/conda-lockfiles
+  home: https://github.com/conda/conda-lockfiles
   summary: conda-lockfiles adds support for additional lockfile formats to conda.
   description: |
     Lock files record the exact state of an environment so that it can be
@@ -50,8 +50,8 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  doc_url: https://conda-incubator.github.io/conda-lockfiles/
-  dev_url: https://github.com/conda-incubator/conda-lockfiles
+  doc_url: https://conda.github.io/conda-lockfiles/
+  dev_url: https://github.com/conda/conda-lockfiles
 
 extra:
   recipe-maintainers:
