@@ -3,15 +3,15 @@ About conda-lockfiles-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conda-lockfiles-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/conda-incubator/conda-lockfiles
+Home: https://github.com/conda/conda-lockfiles
 
 Package license: BSD-3-Clause
 
 Summary: conda-lockfiles adds support for additional lockfile formats to conda.
 
-Development: https://github.com/conda-incubator/conda-lockfiles
+Development: https://github.com/conda/conda-lockfiles
 
-Documentation: https://conda-incubator.github.io/conda-lockfiles/
+Documentation: https://conda.github.io/conda-lockfiles/
 
 Lock files record the exact state of an environment so that it can be
 reproduced at a later date or shared with collaborators. conda-lockfiles
@@ -52,31 +52,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `conda-lockfiles` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install conda-lockfiles
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install conda-lockfiles
 ```
 
-It is possible to list all of the versions of `conda-lockfiles` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add conda-lockfiles
+# for installing globally
+pixi global install conda-lockfiles
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `conda-lockfiles` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search conda-lockfiles --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search conda-lockfiles --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search conda-lockfiles --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -88,6 +130,8 @@ mamba repoquery whoneeds conda-lockfiles --channel conda-forge
 # List dependencies of `conda-lockfiles`:
 mamba repoquery depends conda-lockfiles --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -158,7 +202,4 @@ Feedstock Maintainers
 
 * [@jezdez](https://github.com/jezdez/)
 * [@kenodegard](https://github.com/kenodegard/)
-
-
-<!-- dummy commit to enable rerendering -->
 

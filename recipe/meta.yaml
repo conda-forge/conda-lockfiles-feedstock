@@ -1,6 +1,6 @@
 {% set name = "conda-lockfiles" %}
-{% set version = "0.2.1" %}
-{% set sha256 = "91e087f58395c50c3c5c963e563376c306c28781948116add60cdb028dc2273f" %}
+{% set version = "0.2.2" %}
+{% set sha256 = "a6be0e464729d727cb62c0347cecafe4f021d960c9fef16c3f56a6b7bb21e578" %}
 
 package:
   name: {{ name }}
